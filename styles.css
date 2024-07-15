@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    flex: 1;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #0779e4;
+    transform: translateY(-3px);
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #0779e4;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+form button:hover {
+    background: #005bb5;
+    transform: translateY(-3px);
+}
+
+#schedule-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#schedule-items {
+    list-style: none;
+    padding: 0;
+}
+
+#schedule-items li {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+#schedule-items li:hover {
+    background: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+#schedule-items li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#schedule-items li button:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
